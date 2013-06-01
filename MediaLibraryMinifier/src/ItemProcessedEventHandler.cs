@@ -77,7 +77,7 @@ namespace MediaLibraryMinifier
                                 byte[] byteArray = Encoding.ASCII.GetBytes(newString);
                                 using (MemoryStream stream = new MemoryStream(byteArray))
                                 {
-                                    // Edit medaiItem and upload minified version
+                                    // Edit mediaItem and upload minified version
                                     using (new EditContext((Item)mediaItem, SecurityCheck.Disable))
                                     {
                                         Sitecore.Resources.Media.Media media = MediaManager.GetMedia(mediaItem);
