@@ -34,6 +34,7 @@ namespace MediaLibraryMinifier
             {
                 using (new Sitecore.SecurityModel.SecurityDisabler())
                 {
+                    // Get published item in target environment
                     var item = context.PublishHelper.GetTargetItem(context.ItemId);
 
                     // Check if item is published and it is a media item
@@ -41,22 +42,28 @@ namespace MediaLibraryMinifier
                     {
                         MediaItem mediaItem = new MediaItem(item);
                         string fileExtension = mediaItem.Extension.ToLower();
+                        
+                        // Check if media item is css or js resource
                         if (fileExtension != "css" && fileExtension != "js")
                         {
                             return;
                         }
 
+                        // Get Stream obect of the media item
                         using (Stream mediaStream = mediaItem.GetMediaStream())
                         {
                             using (StreamReader sr = new StreamReader(mediaStream))
                             {
+                                // Read contents of the media items into a String object
                                 string originalString = sr.ReadToEnd();
                                 string newString = String.Empty;
 
+                                // If media item is CSS, then use CssCompressor for compression
                                 if (fileExtension == "css")
                                 {
                                     newString = new CssCompressor().Compress(originalString);
                                 }
+                                // If media item is JS, then use JavaScriptCompressor for compression
                                 else if (fileExtension == "js")
                                 {
                                     newString = new JavaScriptCompressor().Compress(originalString);
@@ -70,6 +77,7 @@ namespace MediaLibraryMinifier
                                 byte[] byteArray = Encoding.ASCII.GetBytes(newString);
                                 using (MemoryStream stream = new MemoryStream(byteArray))
                                 {
+                                    // Edit medaiItem and upload minified version
                                     using (new EditContext((Item)mediaItem, SecurityCheck.Disable))
                                     {
                                         Sitecore.Resources.Media.Media media = MediaManager.GetMedia(mediaItem);
