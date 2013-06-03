@@ -1,0 +1,6 @@
+D:\Infosys\Users\Nishant\Projects\MediaItemsMinifier\bin\MediaItemsMinifier.dll
+D:\Infosys\Users\Nishant\Projects\MediaItemsMinifier\bin\MediaItemsMinifier.pdb
+D:\Infosys\Users\Nishant\Projects\MediaItemsMinifier\bin\Iesi.Collections.dll
+D:\Infosys\Users\Nishant\Projects\MediaItemsMinifier\obj\Debug\ResolveAssemblyReference.cache
+D:\Infosys\Users\Nishant\Projects\MediaItemsMinifier\obj\Debug\MediaItemsMinifier.dll
+D:\Infosys\Users\Nishant\Projects\MediaItemsMinifier\obj\Debug\MediaItemsMinifier.pdb

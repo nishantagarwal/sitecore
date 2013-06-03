@@ -7,7 +7,7 @@ using Sitecore.Resources.Media;
 using Sitecore.SecurityModel;
 using System.Text;
 
-namespace MediaLibraryMinifier
+namespace MediaItemsMinifier
 {
     /// <summary>
     /// Class providing event handler for ItemProcessedEvent

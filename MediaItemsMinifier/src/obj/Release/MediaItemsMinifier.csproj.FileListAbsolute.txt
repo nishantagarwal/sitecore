@@ -1,0 +1,13 @@
+D:\Infosys\Users\Nishant\Projects\MediaItemsMinifier\bin\MediaItemsMinifier.dll
+D:\Infosys\Users\Nishant\Projects\MediaItemsMinifier\bin\MediaItemsMinifier.pdb
+D:\Infosys\Users\Nishant\Projects\MediaItemsMinifier\bin\Iesi.Collections.dll
+D:\Infosys\Users\Nishant\Projects\MediaItemsMinifier\obj\Release\ResolveAssemblyReference.cache
+D:\Infosys\Users\Nishant\Projects\MediaItemsMinifier\obj\Release\MediaItemsMinifier.dll
+D:\Infosys\Users\Nishant\Projects\MediaItemsMinifier\obj\Release\MediaItemsMinifier.pdb
+D:\Infosys\Users\Nishant\Projects\MediaItemsMinifier\src\bin\MediaItemsMinifier.dll
+D:\Infosys\Users\Nishant\Projects\MediaItemsMinifier\src\bin\MediaItemsMinifier.pdb
+D:\Infosys\Users\Nishant\Projects\MediaItemsMinifier\src\bin\EcmaScript.NET.dll
+D:\Infosys\Users\Nishant\Projects\MediaItemsMinifier\src\bin\Iesi.Collections.dll
+D:\Infosys\Users\Nishant\Projects\MediaItemsMinifier\src\obj\Release\ResolveAssemblyReference.cache
+D:\Infosys\Users\Nishant\Projects\MediaItemsMinifier\src\obj\Release\MediaItemsMinifier.dll
+D:\Infosys\Users\Nishant\Projects\MediaItemsMinifier\src\obj\Release\MediaItemsMinifier.pdb

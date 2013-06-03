@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("MediaLibraryMinifier")]
+[assembly: AssemblyTitle("MediaItemsMinifier")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("MediaLibraryMinifier")]
+[assembly: AssemblyProduct("MediaItemsMinifier")]
 [assembly: AssemblyCopyright("Copyright © Microsoft 2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("8bc09914-76c2-4d11-b329-1c51fbb4444b")]
+[assembly: Guid("07e8eb24-b21c-49ae-a261-2f06261d5664")]
 
 // Version information for an assembly consists of the following four values:
 //
