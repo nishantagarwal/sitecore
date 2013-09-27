@@ -4,3 +4,10 @@ D:\Infosys\Users\Nishant\Projects\MediaItemsMinifier\bin\Iesi.Collections.dll
 D:\Infosys\Users\Nishant\Projects\MediaItemsMinifier\obj\Debug\ResolveAssemblyReference.cache
 D:\Infosys\Users\Nishant\Projects\MediaItemsMinifier\obj\Debug\MediaItemsMinifier.dll
 D:\Infosys\Users\Nishant\Projects\MediaItemsMinifier\obj\Debug\MediaItemsMinifier.pdb
+C:\Users\anishant\Documents\GitHub\sitecore\MediaItemsMinifier\src\bin\MediaItemsMinifier.dll
+C:\Users\anishant\Documents\GitHub\sitecore\MediaItemsMinifier\src\bin\MediaItemsMinifier.pdb
+C:\Users\anishant\Documents\GitHub\sitecore\MediaItemsMinifier\src\bin\EcmaScript.NET.dll
+C:\Users\anishant\Documents\GitHub\sitecore\MediaItemsMinifier\src\bin\Iesi.Collections.dll
+C:\Users\anishant\Documents\GitHub\sitecore\MediaItemsMinifier\src\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\anishant\Documents\GitHub\sitecore\MediaItemsMinifier\src\obj\Debug\MediaItemsMinifier.dll
+C:\Users\anishant\Documents\GitHub\sitecore\MediaItemsMinifier\src\obj\Debug\MediaItemsMinifier.pdb

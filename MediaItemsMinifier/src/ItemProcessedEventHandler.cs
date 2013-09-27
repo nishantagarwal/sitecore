@@ -42,49 +42,57 @@ namespace MediaItemsMinifier
                     {
                         MediaItem mediaItem = new MediaItem(item);
                         string fileExtension = mediaItem.Extension.ToLower();
-                        
+
                         // Check if media item is css or js resource
                         if (fileExtension != "css" && fileExtension != "js")
                         {
                             return;
                         }
 
-                        // Get Stream obect of the media item
-                        using (Stream mediaStream = mediaItem.GetMediaStream())
+                        try
                         {
-                            using (StreamReader sr = new StreamReader(mediaStream))
+                            // Get Stream object of the media item
+                            using (Stream mediaStream = mediaItem.GetMediaStream())
                             {
-                                // Read contents of the media items into a String object
-                                string originalString = sr.ReadToEnd();
-                                string newString = String.Empty;
+                                using (StreamReader sr = new StreamReader(mediaStream))
+                                {
+                                    // Read contents of the media items into a String object
+                                    string originalString = sr.ReadToEnd();
+                                    string newString = String.Empty;
 
-                                // If media item is CSS, then use CssCompressor for compression
-                                if (fileExtension == "css")
-                                {
-                                    newString = new CssCompressor().Compress(originalString);
-                                }
-                                // If media item is JS, then use JavaScriptCompressor for compression
-                                else if (fileExtension == "js")
-                                {
-                                    newString = new JavaScriptCompressor().Compress(originalString);
-                                }
-
-                                if (String.IsNullOrEmpty(newString))
-                                {
-                                    return;
-                                }
-
-                                byte[] byteArray = Encoding.ASCII.GetBytes(newString);
-                                using (MemoryStream stream = new MemoryStream(byteArray))
-                                {
-                                    // Edit mediaItem and upload minified version
-                                    using (new EditContext((Item)mediaItem, SecurityCheck.Disable))
+                                    // If media item is CSS, then use CssCompressor for compression
+                                    if (fileExtension == "css")
                                     {
-                                        Sitecore.Resources.Media.Media media = MediaManager.GetMedia(mediaItem);
-                                        media.SetStream(new MediaStream(stream, fileExtension, mediaItem));
+                                        newString = new CssCompressor().Compress(originalString);
+                                    }
+                                    // If media item is JS, then use JavaScriptCompressor for compression
+                                    else if (fileExtension == "js")
+                                    {
+                                        newString = new JavaScriptCompressor().Compress(originalString);
+                                    }
+
+                                    if (String.IsNullOrEmpty(newString))
+                                    {
+                                        return;
+                                    }
+
+                                    byte[] byteArray = Encoding.ASCII.GetBytes(newString);
+                                    using (MemoryStream stream = new MemoryStream(byteArray))
+                                    {
+                                        // Edit mediaItem and upload minified version
+                                        using (new EditContext((Item)mediaItem, SecurityCheck.Disable))
+                                        {
+                                            Sitecore.Resources.Media.Media media = MediaManager.GetMedia(mediaItem);
+                                            media.SetStream(new MediaStream(stream, fileExtension, mediaItem));
+                                        }
                                     }
                                 }
                             }
+                            Sitecore.Diagnostics.Log.Info(String.Format("Media Items Minfier: Published item - '{0}' minified successfully.", item.Paths.FullPath), this);
+                        }
+                        catch (Exception ex)
+                        {
+                            Sitecore.Diagnostics.Log.Error(String.Format("Media Items Minfier: Published item - '{0}' not minified. Error: ", item.Paths.FullPath), ex, this);
                         }
                     }
                 }

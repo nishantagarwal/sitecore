@@ -11,3 +11,10 @@ D:\Infosys\Users\Nishant\Projects\MediaItemsMinifier\src\bin\Iesi.Collections.dl
 D:\Infosys\Users\Nishant\Projects\MediaItemsMinifier\src\obj\Release\ResolveAssemblyReference.cache
 D:\Infosys\Users\Nishant\Projects\MediaItemsMinifier\src\obj\Release\MediaItemsMinifier.dll
 D:\Infosys\Users\Nishant\Projects\MediaItemsMinifier\src\obj\Release\MediaItemsMinifier.pdb
+C:\Users\anishant\Documents\GitHub\sitecore\MediaItemsMinifier\src\bin\MediaItemsMinifier.dll
+C:\Users\anishant\Documents\GitHub\sitecore\MediaItemsMinifier\src\bin\MediaItemsMinifier.pdb
+C:\Users\anishant\Documents\GitHub\sitecore\MediaItemsMinifier\src\bin\EcmaScript.NET.dll
+C:\Users\anishant\Documents\GitHub\sitecore\MediaItemsMinifier\src\bin\Iesi.Collections.dll
+C:\Users\anishant\Documents\GitHub\sitecore\MediaItemsMinifier\src\obj\Release\ResolveAssemblyReference.cache
+C:\Users\anishant\Documents\GitHub\sitecore\MediaItemsMinifier\src\obj\Release\MediaItemsMinifier.dll
+C:\Users\anishant\Documents\GitHub\sitecore\MediaItemsMinifier\src\obj\Release\MediaItemsMinifier.pdb
